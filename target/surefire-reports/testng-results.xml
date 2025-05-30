@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-25T23:35:08 IST" name="Suite" finished-at="2025-05-25T23:35:23 IST" duration-ms="14614">
+  <suite started-at="2025-05-25T23:51:26 IST" name="Suite" finished-at="2025-05-25T23:51:32 IST" duration-ms="6605">
     <groups>
     </groups>
-    <test started-at="2025-05-25T23:35:08 IST" name="Test" finished-at="2025-05-25T23:35:23 IST" duration-ms="14614">
+    <test started-at="2025-05-25T23:51:26 IST" name="Test" finished-at="2025-05-25T23:51:32 IST" duration-ms="6605">
       <class name="Jenkins_01.Orange_Title">
-        <test-method signature="startbrowser(java.lang.String)[pri:0, instance:Jenkins_01.Orange_Title@59fd97a8]" started-at="2025-05-25T23:35:08 IST" name="startbrowser" finished-at="2025-05-25T23:35:23 IST" duration-ms="14578" status="PASS">
+        <test-method signature="startbrowser(java.lang.String)[pri:0, instance:Jenkins_01.Orange_Title@59fd97a8]" started-at="2025-05-25T23:51:26 IST" name="startbrowser" finished-at="2025-05-25T23:51:32 IST" duration-ms="6570" status="PASS">
           <params>
             <param index="0">
               <value>
