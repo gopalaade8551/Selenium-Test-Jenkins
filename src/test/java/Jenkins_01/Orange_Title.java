@@ -21,22 +21,24 @@ public class Orange_Title {
 		
 		System.out.println("the parameter value is "+browsername);
 		WebDriver driver=null;
-		if(browsername.contains("chrome"))
-		{
-			WebDriverManager.chromedriver().setup();
-			 driver=new ChromeDriver();
-		}
+//		if(browsername.contains("chrome"))
+//		{
+//			WebDriverManager.chromedriver().setup();
+//			 driver=new ChromeDriver();
+//		}
 		
-		else if(browsername.contains("Edge"))
+		 if(browsername.contains("Edge"))
 		{
 			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		}
 		
-		WebDriverManager.chromedriver().setup();
-		 driver=new ChromeDriver();
+//		WebDriverManager.chromedriver().setup();
+//		 driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		System.out.println("the title is "+driver.getTitle());
 		boolean title=driver.getTitle().contains("Orange");
