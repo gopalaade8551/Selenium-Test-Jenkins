@@ -21,11 +21,11 @@ public class Orange_Title {
 		
 		System.out.println("the parameter value is "+browsername);
 		WebDriver driver=null;
-//		if(browsername.contains("chrome"))
-//		{
-//			WebDriverManager.chromedriver().setup();
-//			 driver=new ChromeDriver();
-//		}
+		if(browsername.contains("chrome"))
+		{
+			WebDriverManager.chromedriver().setup();
+			 driver=new ChromeDriver();
+		}
 		
 		 if(browsername.contains("Edge"))
 		{
@@ -35,8 +35,8 @@ public class Orange_Title {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		}
 		
-//		WebDriverManager.chromedriver().setup();
-//		 driver=new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+		 driver=new ChromeDriver();
 		driver.manage().window().maximize();
 	
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
